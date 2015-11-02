@@ -402,23 +402,23 @@
                 </div>
 
                 <div class="col-md-9  wow fadeInRight animated">
-                    <form class="contact-form" action="">
-                        <div class="row">
+                    <form class="contact-form" action="SendMail.php" method="post">
+                       
+						<div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject">                                
+                                <input type="text" class="form-control" id="name" name ="Name" placeholder="Name">
+                                Email:<input type="email" class="form-control" id="email" name ="Email" placeholder="Email">
+                                Subject:<input type="text" class="form-control" id="subject" name="Subject" placeholder="Subject">                                
                             </div>
                             <div class="col-md-6">
-                                <textarea class="form-control" id="message" rows="25" cols="10" placeholder="  Message Texts..."></textarea>
-                                <button type="button" class="btn btn-default submit-btn form_submit">SEND MESSAGE</button>                                
-                            </div>
+                               Message:<textarea class="form-control" id="message" name="Message" rows="25" cols="10" placeholder="  Message Texts..."></textarea>
+                                <input type="submit" value ="SEND MESSAGE" class="btn btn-default submit-btn form_submit">                                
+                            </div>							
                         </div>
+						
                     </form>
                 </div>
-            -
-            </div>
-        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
